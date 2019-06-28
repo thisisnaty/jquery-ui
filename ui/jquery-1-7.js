@@ -13,15 +13,7 @@
 //>>description: Support version 1.7.x of jQuery core
 
 ( function( factory ) {
-	if ( typeof define === "function" && define.amd ) {
-
-		// AMD. Register as an anonymous module.
-		define( [ "jquery", "./version" ], factory );
-	} else {
-
-		// Browser globals
-		factory( jQuery );
-	}
+	factory ( jQuery );
 }( function( $ ) {
 
 // Support: jQuery 1.7 only
